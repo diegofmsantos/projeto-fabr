@@ -53,6 +53,11 @@ main {
     background-color: rgb(33, 196, 33);
 }
 
+.menu-item img {
+    width: 100px;
+    height: 150px;
+}
+
 .filters {
     height: 50px;
     display: flex;
