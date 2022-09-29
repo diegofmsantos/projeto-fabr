@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #CCC;
+    background-color: #F4F4F4;
 }
 
 .header {
@@ -22,8 +22,8 @@ body {
 }
 
 .logo-header img {
-    width: 250px;
-    height: 125px;
+    width: 220px;
+    height: 100px;
 }
 
 .social {
@@ -33,7 +33,7 @@ body {
 }
 
 main {
-    margin-bottom: 300px;
+    margin-bottom: 100px;
 }
 
 .container {
@@ -50,12 +50,15 @@ main {
 .menu-item {
     width: 100px;
     height: 150px;
-    background-color: rgb(33, 196, 33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #95E200;
 }
 
 .menu-item img {
-    width: 100px;
-    height: 150px;
+    width: 120px;
+    height: 100px;
 }
 
 .filters {
@@ -86,7 +89,35 @@ article {
 .content-area {
     width: 165px;
     height: 165px;
-    background-color: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.content-area-big {
+    width: 165px;
+    height: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.content-area-big img {
+    width: 120px;
+    height: 90px;
+}
+
+.content-area-last {
+    display: flex;
+    justify-content: flex-start;
+    gap: 22px;
+}
+
+.content-area img {
+    width: 90px;
+    height: 90px;
 }
 
 .banner {
@@ -96,4 +127,66 @@ article {
 .banner-area {
     height: 200px;
     background-color: #000;
+}
+
+footer {
+    background-color: #17181C;
+}
+
+.footer {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-footer {
+    width: 250px;
+    height: 70px;
+    margin-top: 30px;
+    background-color: #f7f7f7;
+}
+
+.footer-area {
+    max-width: 1200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 70px;
+    margin-top: 70px;
+}
+
+.footer-area-box {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+.footer-area-box-big {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    margin: 0px 70px;
+}
+
+.footer-area-box h4 {
+    margin-bottom: 20px;
+}
+
+.footer-area-box p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.footer-area-end {
+    color: #FFF;
+    margin-bottom: 20px;
 }
