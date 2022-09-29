@@ -1,10 +1,17 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fontes/OpenSans-Italic-VariableFont_wdth\,wght.ttf') format('opentype');
+    src: url('fontes/OpenSans-Regular.ttf') format('opentype');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -58,13 +65,18 @@ main {
 }
 
 .menu-item img {
-    width: 120px;
-    height: 100px;
+    width: 70px;
+    height: 60px;
+}
+
+.menu-item .email {
+    width: 60px;
+    height: 50px;
 }
 
 .menu-item p {
-    font-size: 11px;
-    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
 }
 
 .filters {
@@ -164,7 +176,7 @@ footer {
 }
 
 .footer-area-box {
-    width: 100px;
+    width: 130px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -173,25 +185,30 @@ footer {
 }
 
 .footer-area-box-big {
-    width: 100px;
+    width: 180px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #FFF;
-    margin: 0px 70px;
 }
 
 .footer-area-box h4, .footer-area-box-big h4 {
+    font-family: 'Open Sans';
+    font-weight: 900;
     margin-bottom: 20px;
 }
 
 .footer-area-box p, .footer-area-box-big p {
+    font-family: 'Open Sans';
+    font-weight: 500;
     font-size: 14px;
     margin-bottom: 5px;
 }
 
 .footer-area-end {
+    font-family: 'Open Sans';
+    font-weight: 100;
     color: #FFF;
-    margin-bottom: 20px;
+    margin: 30px 0px 10px 0px;
 }
