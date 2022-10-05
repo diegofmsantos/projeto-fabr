@@ -113,42 +113,21 @@ article {
 }
 
 .content-area {
-    width: 165px;
-    height: 165px;
+    width: 120px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #000;
 }
 
-.content-area:hover,
-.content-area-big:hover {
+.content-area:hover {
     background-color: #95E200;
 }
 
-.content-area-big {
-    width: 165px;
-    height: 165px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #000;
-}
-
-.content-area-big img {
-    width: 120px;
-    height: 90px;
-}
-
-.content-area-last {
-    display: flex;
-    justify-content: flex-start;
-    gap: 22px;
-}
-
 .content-area img {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
 }
 
 .banner {
