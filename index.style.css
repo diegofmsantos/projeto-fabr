@@ -39,6 +39,14 @@ body {
     gap: 20px;
 }
 
+.social a:hover {
+    background-color: #95E200;
+}
+
+#buscar {
+    padding: 8px;
+}
+
 main {
     margin-bottom: 100px;
 }
@@ -113,6 +121,11 @@ article {
     border: 1px solid #000;
 }
 
+.content-area:hover,
+.content-area-big:hover {
+    background-color: #95E200;
+}
+
 .content-area-big {
     width: 165px;
     height: 165px;
@@ -148,11 +161,12 @@ article {
 }
 
 footer {
+    height: auto;
     background-color: #17181C;
 }
 
 .footer {
-    height: 400px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -167,16 +181,16 @@ footer {
 
 .footer-area {
     max-width: 1200px;
-    height: 150px;
     display: flex;
     justify-content: center;
     align-items: baseline;
+    flex-wrap: wrap;
     gap: 70px;
     margin-top: 70px;
 }
 
 .footer-area-box {
-    width: 130px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -184,26 +198,23 @@ footer {
     color: #FFF;
 }
 
-.footer-area-box-big {
-    width: 180px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #FFF;
-}
-
-.footer-area-box h4, .footer-area-box-big h4 {
+.footer-area-box h4 {
     font-family: 'Open Sans';
     font-weight: 900;
+    letter-spacing: 1px;
     margin-bottom: 20px;
 }
 
-.footer-area-box p, .footer-area-box-big p {
+.footer-area-box p {
     font-family: 'Open Sans';
     font-weight: 500;
     font-size: 14px;
     margin-bottom: 5px;
+}
+
+.footer-area-box h4:hover,
+.footer-area-box p:hover {
+    color: #95E200;
 }
 
 .footer-area-end {

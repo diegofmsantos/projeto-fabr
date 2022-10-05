@@ -39,6 +39,14 @@ body {
     gap: 20px;
 }
 
+.social a:hover {
+    background-color: #95E200;
+}
+
+#buscar {
+    padding: 8px;
+}
+
 main {
     margin-bottom: 100px;
 }
@@ -69,6 +77,11 @@ main {
     height: 60px;
 }
 
+.menu-item .email {
+    width: 60px;
+    height: 50px;
+}
+
 .menu-item p {
     font-family: 'Bebas Neue', cursive;
     font-size: 15px;
@@ -87,7 +100,7 @@ form {
     font-weight: bold;
 }
 
-input[type=text], input[type=email] {
+ form input[type=text], input[type=email] {
     height: 28px;
     margin-top: 5px;
 }
@@ -141,11 +154,12 @@ input[type=submit] {
 
 
 footer {
+    height: auto;
     background-color: #17181C;
 }
 
 .footer {
-    height: 400px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -160,16 +174,16 @@ footer {
 
 .footer-area {
     max-width: 1200px;
-    height: 150px;
     display: flex;
     justify-content: center;
     align-items: baseline;
+    flex-wrap: wrap;
     gap: 70px;
     margin-top: 70px;
 }
 
 .footer-area-box {
-    width: 100px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -180,19 +194,25 @@ footer {
 .footer-area-box h4 {
     font-family: 'Open Sans';
     font-weight: 900;
+    letter-spacing: 1px;
     margin-bottom: 20px;
 }
 
 .footer-area-box p {
     font-family: 'Open Sans';
-    font-weight: 100;
+    font-weight: 500;
     font-size: 14px;
     margin-bottom: 5px;
+}
+
+.footer-area-box h4:hover,
+.footer-area-box p:hover {
+    color: #95E200;
 }
 
 .footer-area-end {
     font-family: 'Open Sans';
     font-weight: 100;
     color: #FFF;
-    margin-bottom: 20px;
+    margin: 30px 0px 10px 0px;
 }
