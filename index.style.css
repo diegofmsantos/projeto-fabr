@@ -19,7 +19,7 @@ body {
 }
 
 .header {
-    max-width: 1100px;
+    max-width: 1140px;
     height: 150px;
     margin: auto;
     padding: 10px;
@@ -52,7 +52,7 @@ main {
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 1140px;
     margin: auto;
 }
 
@@ -107,7 +107,7 @@ main {
 
 article {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 20px;
     row-gap: 20px;
@@ -133,15 +133,6 @@ article {
     height: 70px;
 }
 
-.banner {
-    margin-top: 50px;
-}
-
-.banner-area {
-    height: 200px;
-    background-color: #000;
-}
-
 footer {
     height: auto;
     background-color: #17181C;
@@ -162,7 +153,7 @@ footer {
 }
 
 .footer-area {
-    max-width: 1200px;
+    max-width: 1140px;
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -199,7 +190,7 @@ footer {
     color: #95E200;
 }
 
-.footer-area-end {
+.footer-area-end p {
     font-family: 'Open Sans';
     font-weight: 100;
     color: #FFF;
@@ -208,7 +199,47 @@ footer {
 
 @media (max-width: 425px) {
 
+    .header {
+        flex-direction: column;
+        gap: 30px;
+    }
+
     .menu-area {
-        
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .menu-item {
+        width: 65px;
+        height: 65px;
+    }
+
+    .menu-item img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .menu-item p {
+        font-size: 12px;
+    }
+
+    #buscar {
+        display: none;
+    }
+
+    .filters {
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    article {
+        justify-content: space-around;
+    }
+
+    .footer-area-end p {
+        font-size: 12px;
+        text-align: center;
+        margin: 10px;
     }
 }
