@@ -168,6 +168,10 @@ input[type=submit] {
     margin-top: 10px;
 }
 
+.contact-area-details p {
+    text-decoration: none;
+}
+
 footer {
     height: auto;
     background-color: #17181C;
