@@ -102,7 +102,6 @@ form {
     justify-content: flex-start;
     gap: 30px;
     font-weight: bold;
-    padding: 10px;
 }
 
  form input[type=text], input[type=email] {
@@ -139,7 +138,7 @@ input[type=submit] {
     justify-content: flex-start;
     align-items: flex-end;
     height: 250px;
-    padding: 15px;
+    padding: 10px;
 }
 
 .contact-area {
@@ -167,7 +166,6 @@ input[type=submit] {
     gap: 5px;
     margin-top: 10px;
 }
-
 
 footer {
     height: auto;
@@ -226,9 +224,86 @@ footer {
     color: #95E200;
 }
 
-.footer-area-end {
+.footer-area-end p {
     font-family: 'Open Sans';
     font-weight: 100;
     color: #FFF;
     margin: 30px 0px 10px 0px;
+}
+
+@media (max-width: 425px) {
+
+    .header {
+        height: auto;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .menu-area {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 50px 0px;
+    }
+
+    .menu-item {
+        width: 65px;
+        height: 65px;
+    }
+
+    .menu-item img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .menu-item p {
+        font-size: 12px;
+    }
+
+    #buscar {
+        display: none;
+    }
+
+    .filters {
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    article {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    input#name, input#email, textarea {
+        max-width: 300px;
+    }
+
+    input[type=submit] {
+        margin-left: auto;
+        margin-right: 5px;
+    }
+
+    .contact-area-details {
+        width: 248px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        gap: 5px;
+        margin-top: 10px;
+    }
+
+    .footer-area-end p {
+        font-size: 12px;
+        text-align: center;
+        margin: 10px;
+    }
 }
