@@ -40,6 +40,10 @@ body {
     gap: 20px;
 }
 
+.social img, .social a  {
+    border-radius: 8px;
+}
+
 .social a:hover {
     background-color: #95E200;
 }
@@ -95,6 +99,7 @@ main {
     width: 200px;
     margin: auto;
     margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 #menu {
@@ -106,7 +111,11 @@ main {
     background-color: #95E200;
 }
 
-select option
+option {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+}
 
 
 .filters {
@@ -217,11 +226,72 @@ footer {
     margin: 30px 0px 10px 0px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 767px) {
+
+        .header {
+            justify-content: space-around;
+        }
+    
+        #buscar {
+            display: block;
+            width: 150px;
+        }
+
+        .logo-header img {
+            width: 180px;
+            height: 90px;
+        }
+    
+        .menu-area {
+            justify-content: space-around;
+            flex-wrap: wrap;
+            display: none;
+        }
+    
+        .menu-item {
+            width: 65px;
+            height: 65px;
+        }
+    
+        .menu-item img {
+            width: 45px;
+            height: 45px;
+        }
+    
+        .menu-item p {
+            font-size: 12px;
+        }
+
+        .menu-select {
+            display: block;
+            margin-top: 20px;
+        }
+    
+        .filters {
+            height: auto;
+            flex-direction: column;
+            gap: 20px;
+        }
+    
+        article {
+            justify-content: space-around;
+        }
+    
+        .footer-area-end p {
+            font-size: 16px;
+            text-align: center;
+            margin: 10px;
+        }
+
+    }
+
+
+@media (min-width: 426px) and (max-width: 650px) {
 
     .header {
         flex-direction: column;
         gap: 30px;
+        margin-top: 20px;
     }
 
     #buscar {
@@ -250,6 +320,7 @@ footer {
 
     .menu-select {
         display: block;
+        margin-top: 50px;
     }
 
     .filters {
@@ -267,4 +338,59 @@ footer {
         text-align: center;
         margin: 10px;
     }
+}
+
+@media (max-width: 425px) {
+
+    .header {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    #buscar {
+        display: none;
+    }
+
+    .menu-area {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        display: none;
+    }
+
+    .menu-item {
+        width: 65px;
+        height: 65px;
+    }
+
+    .menu-item img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .menu-item p {
+        font-size: 12px;
+    }
+
+    .menu-select {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .filters {
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    article {
+        justify-content: space-around;
+    }
+
+    .footer-area-end p {
+        font-size: 12px;
+        text-align: center;
+        margin: 10px;
+    }
+
 }

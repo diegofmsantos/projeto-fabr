@@ -20,7 +20,7 @@ body {
 }
 
 .header {
-    max-width: 1100px;
+    max-width: 1140px;
     height: 150px;
     margin: auto;
     padding: 10px;
@@ -40,6 +40,10 @@ body {
     gap: 20px;
 }
 
+.social img, .social a  {
+    border-radius: 8px;
+}
+
 .social a:hover {
     background-color: #95E200;
 }
@@ -53,7 +57,7 @@ main {
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 1140px;
     margin: auto;
 }
 
@@ -90,6 +94,29 @@ main {
     font-size: 15px;
 }
 
+.menu-select {
+    display: none;
+    width: 200px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#menu {
+    width: 220px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #95E200;
+}
+
+option {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+}
+
 article {
     display: flex;
     padding: 15px;
@@ -119,7 +146,7 @@ textarea {
 input[type=submit] {
     width: 100px;
     margin-left: auto;
-    margin-right: 15px;
+    margin-right: 18px;
     background-color: #95E200;
     border: 1px solid #000;
     padding: 5px;
@@ -236,18 +263,26 @@ footer {
     margin: 30px 0px 10px 0px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 767px) {
 
     .header {
-        height: auto;
-        flex-direction: column;
-        gap: 30px;
+        justify-content: space-around;
+    }
+
+    #buscar {
+        display: block;
+        width: 150px;
+    }
+
+    .logo-header img {
+        width: 180px;
+        height: 90px;
     }
 
     .menu-area {
         justify-content: space-around;
         flex-wrap: wrap;
-        margin: 50px 0px;
+        display: none;
     }
 
     .menu-item {
@@ -264,8 +299,9 @@ footer {
         font-size: 12px;
     }
 
-    #buscar {
-        display: none;
+    .menu-select {
+        display: block;
+        margin-top: 20px;
     }
 
     .filters {
@@ -275,40 +311,186 @@ footer {
     }
 
     article {
-        height: auto;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
+        padding: 40px;
     }
 
     form {
-        padding: 10px;
+        max-width: 320px;
     }
 
-    input#name, input#email, textarea {
-        max-width: 300px;
+    form input[type=text], input[type=email], textarea {
+        width: 270px;
     }
 
     input[type=submit] {
         margin-left: auto;
-        margin-right: 5px;
-    }
-
-    .contact-area-details {
-        width: 252px;
-        height: 100px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-end;
-        gap: 5px;
-        margin-top: 10px;
+        margin-right: 55px;
     }
 
     .footer-area-end p {
-        font-size: 12px;
+        font-size: 16px;
         text-align: center;
         margin: 10px;
     }
+
+}
+
+
+@media (min-width: 426px) and (max-width: 701px) {
+
+.header {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+#buscar {
+    display: none;
+}
+
+.menu-area {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.menu-item {
+    width: 65px;
+    height: 65px;
+}
+
+.menu-item img {
+    width: 45px;
+    height: 45px;
+}
+
+.menu-item p {
+    font-size: 12px;
+}
+
+.menu-select {
+    display: block;
+    margin-top: 50px;
+}
+
+article {
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+}
+
+form input[type=text], input[type=email], textarea {
+    width: 330px;
+}
+
+input[type=submit] {
+    margin: auto;
+}
+
+.contact-content {
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-area p {
+    font-size: 20px;
+}
+
+
+.filters {
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-area-end p {
+    font-size: 12px;
+    text-align: center;
+    margin: 10px;
+}
+
+}
+
+@media (max-width: 425px) {
+
+.header {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+#buscar {
+    display: none;
+}
+
+.menu-area {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.menu-item {
+    width: 65px;
+    height: 65px;
+}
+
+.menu-item img {
+    width: 45px;
+    height: 45px;
+}
+
+.menu-item p {
+    font-size: 12px;
+}
+
+.menu-select {
+    display: block;
+    margin-top: 50px;
+}
+
+article {
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+form input[type=text], input[type=email], textarea {
+    width: 280px;
+}
+
+input[type=submit] {
+    margin: auto;
+}
+
+.contact-content {
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0px;
+}
+
+.contact-area-details {
+    margin-right: 15px;
+}
+
+.contact-area p {
+    font-size: 16px;
+}
+
+.filters {
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.footer-area-end p {
+    font-size: 12px;
+    text-align: center;
+    margin: 10px;
+}
+
 }
