@@ -1,2 +1,1 @@
-# projeto-fabr
- Início do Projeto do site FABR.
+# Início do projeto do site de Futebol Americano Brasileiro (FABR).
