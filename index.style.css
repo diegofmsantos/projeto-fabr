@@ -90,6 +90,25 @@ main {
     font-size: 15px;
 }
 
+.menu-select {
+    display: none;
+    width: 200px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#menu {
+    width: 220px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #95E200;
+}
+
+select option
+
+
 .filters {
     height: 50px;
     display: flex;
@@ -205,9 +224,14 @@ footer {
         gap: 30px;
     }
 
+    #buscar {
+        display: none;
+    }
+
     .menu-area {
         justify-content: space-around;
         flex-wrap: wrap;
+        display: none;
     }
 
     .menu-item {
@@ -224,8 +248,8 @@ footer {
         font-size: 12px;
     }
 
-    #buscar {
-        display: none;
+    .menu-select {
+        display: block;
     }
 
     .filters {
